@@ -1,0 +1,10 @@
+This is just an answer to all the people that keep complaining about PHP's functions not being "properly" named.
+
+DO NOT USE THIS!
+-----------
+
+It will make other developers hate you.
+
+Since I've got this tic, I can't really stop this until I cover the full PHP API so it may take a bit.
+
+Afterward I'll probably run the code through a bunch of benchmarks to show the difference in speed between these aliases and going raw.
