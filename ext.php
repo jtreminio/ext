@@ -9,7 +9,7 @@ namespace ext;
  * @param string $charlist
  * @return string
  */
-function addCSlashes($str, $charlist) {
+function add_c_slashes($str, $charlist) {
     return \addcslashes($str, $charlist);
 }
 
@@ -19,7 +19,7 @@ function addCSlashes($str, $charlist) {
  * @param string $str
  * @return string
  */
-function addSlashes($str)
+function add_slashes($str)
 {
     return \addslashes($str);
 }
@@ -30,7 +30,7 @@ function addSlashes($str)
  * @param string $str
  * @return string
  */
-function bin2Hex($str)
+function bin_2_hex($str)
 {
     return \bin2hex($str);
 }
@@ -68,7 +68,7 @@ function chr($ascii)
  * @param string $end
  * @return string
  */
-function chunkSplit($body, $chunklen = 76, $end = "\r\n")
+function chunk_split($body, $chunklen = 76, $end = "\r\n")
 {
     return \chunk_split($body, $chunklen, $end);
 }
@@ -81,7 +81,7 @@ function chunkSplit($body, $chunklen = 76, $end = "\r\n")
  * @param string $to
  * @return string
  */
-function convertCyrString($str, $from, $to)
+function convert_cyr_string($str, $from, $to)
 {
     return \convert_cyr_string($str, $from, $to);
 }
@@ -92,7 +92,7 @@ function convertCyrString($str, $from, $to)
  * @param string $data
  * @return string
  */
-function convertUuDecode($data)
+function convert_uudecode($data)
 {
     return \convert_uudecode($data);
 }
@@ -103,7 +103,7 @@ function convertUuDecode($data)
  * @param string $data
  * @return string
  */
-function convertUuEncode($data)
+function convert_uuencode($data)
 {
     return \convert_uuencode($data);
 }
@@ -115,7 +115,7 @@ function convertUuEncode($data)
  * @param int    $mode
  * @return mixed
  */
-function countChars($string, $mode = 0)
+function count_chars($string, $mode = 0)
 {
     return \count_chars($string, $mode);
 }
@@ -141,4 +141,17 @@ function crc32($str)
 function crypt($str, $salt = null)
 {
     return \crypt($str, $salt);
+}
+
+/**
+ * Split a string by string
+ *
+ * @param string $delimiter
+ * @param string $string
+ * @param int    $limit
+ * @return array
+ */
+function explode($delimiter, $string, $limit = 0)
+{
+    return \explode($delimiter, $string, $limit);
 }
